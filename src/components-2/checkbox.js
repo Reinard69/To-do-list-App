@@ -11,6 +11,7 @@ function ItemSelect({ label, selected, select, unSelect, disabled }) {
     };
 
     return (
+        <div className="a">
         <label className="checkbox-field">
             <input
                 type="checkbox"
@@ -21,6 +22,7 @@ function ItemSelect({ label, selected, select, unSelect, disabled }) {
             <span className={disabled ? "checkmark disabled" : "checkmark"} />
             {label && <span className="label-text">{label}</span>}
         </label>
+        </div>
     );
 }
 

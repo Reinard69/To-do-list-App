@@ -28,6 +28,7 @@ h1{
 .navbar-second{
   /*border: 2px solid white;*/
   margin-top: 30px;
+  width: 100%;
 }
 
 .app-container {
@@ -79,17 +80,19 @@ h1{
   text-decoration: line-through;
   opacity: 0.3;
 }
-
+.a{
+  width: 100%;
+}
 .checkbox-field {
   font-weight: normal;
-  font-size: 15px;
-  padding-left: 30px;
-  padding-right: 20px;
+  /*font-size: 15px;*/
+  padding-left: 2px;
+  padding-right: 5px;
   margin-bottom: 0;
   display: flex;
   align-items: center;
   color: #ffffff;
-  margin-left: 40px;
+  /*margin-left: 40px;*/
 }
 
 .checkbox-field input {
