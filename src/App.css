@@ -35,7 +35,7 @@ h1{
   overflow: hidden;
   display: flex;
   flex-direction: column;
-  justify-content: start;
+  justify-content: flex-start;
   width: 70%;
   min-height: 600px;
   background: #161a2b;
