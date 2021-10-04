@@ -1,38 +1,176 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  background: linear-gradient(
+          90deg,
+          rgba(48, 16, 255, 1) 0%,
+          rgba(100, 115, 255, 1) 100%
+  );}
+h1{
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.navbar-title{
+  margin-top: 30px;
+  background: linear-gradient(
+          90deg,
+          rgba(48, 16, 255, 1) 0%,
+          rgba(100, 115, 255, 1) 100%
+  );
+  padding: 20px 0px;
+}
+.navbar-brand {
+  color: #ffffff;
+  font-size: x-large;
+  font-weight: bold;
+  font-style: italic;
+  border-radius: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.navbar-second{
+  /*border: 2px solid white;*/
+  margin-top: 30px;
 }
+
+.app-container {
+  /*height: 100vh;*/
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  width: 70%;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 70px auto;
+  border-radius: 30px;
+  padding-bottom: 32px;
+  -webkit-box-shadow: 5px 5px 15px 5px #000000;
+  box-shadow: 5px 5px 15px 5px #000000;
+}
+
+.app-container .list {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.app-container .list i {
+  margin-right: 10px;
+}
+
+.app-container .list .item {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  border: 2px solid white;
+  /*word-wrap: break-word;*/
+  overflow: auto;
+  padding:5px 0;
+  /*white-space: nowrap;*/
+  /*overflow: hidden;*/
+  /*text-overflow: ellipsis;*/
+  width: 99%;
+  /*text-wrap: normal;*/
+}
+
+.app-container .list .item .item-title {
+  flex-grow: 1;
+}
+
+.app-container .list .item .item-title.complete-item {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.checkbox-field {
+  font-weight: normal;
+  font-size: 15px;
+  padding-left: 30px;
+  padding-right: 20px;
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  margin-left: 40px;
+}
+
+.checkbox-field input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkbox-field .checkmark {
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border: 1px solid #9d9d9d;
+  border-radius: 3px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.checkbox-field .checkmark.disabled {
+  cursor: default;
+  background-color: transparent;
+}
+
+.checkbox-field .checkmark:after {
+  content: "";
+  display: none;
+}
+
+.checkbox-field input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox-field .checkmark:after {
+  position: relative;
+  left: 6px;
+  top: 1px;
+  width: 6px;
+  height: 13px;
+  border: solid #9d9d9d;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.checkbox-field .label-text {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.add-item-form {
+  padding: 20px;
+}
+.btn {
+  padding: 16px;
+  border: none;
+  border-radius: 10px 10px 10px 10px;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+          90deg,
+          rgba(93, 12, 255, 1) 0%,
+          rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+.alert{
+  margin: 32px 0;
+  color: #fff;
+  font-size: 24px;
+}
+.list-group{
+  color: #ffffff;
+}
+.form-group{
+  color: #ffffff;
+}
+.btn-link{
+  margin-right: 10px;
+}
+
